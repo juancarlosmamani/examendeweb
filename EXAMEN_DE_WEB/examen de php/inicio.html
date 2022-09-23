@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="menu">
+        <div>
+            <a href="">Inicio</a>
+        </div>
+
+        <div>
+            <a href="">Creacion de DB</a>
+        </div>
+
+        <div>
+            <a href="">Creacion de tabla</a>
+        </div>
+
+        <div>
+            <a href="">Registro de Datos</a>
+        </div>
+
+        <div>
+            <a href="">Reportes</a>
+        </div>
+    </div>
+<div class="bd">
+    <form action="crearDB.php" method="post">
+        <h3>creacion de base de datos</h3>
+        <h3>aqui creamos la base de datos </h3>
+        <h3 class="etiqueta">nombre de base de datos:</h3>         
+        <input class="tbx" type="text" name="base" placeholder="nombre de BD"> <br>
+            <br>
+            <input type="submit" class="boton">  
+    </form>
+</div>
+<div class="tb">
+    <form action="creartabla.php" method="post">
+        <h1>creacion de tablas</h1>
+        <h2>aqui creamos las tablas</h2>
+        <h3 class="etiqueta">nombre de la base de datos:</h3>         
+        <input class="tbx" type="text" name="base" placeholder="nombre de BD"> <br>
+            <br>
+        <h3 class="etiqueta">nombre de la tabla:</h3>         
+        <input class="tbx" type="text" name="tabla" placeholder="nombre de la tabla"> <br>
+            <br>
+        <h3 class="etiqueta">columnas:</h3> 
+        <input class="tbx" type="text" name="columna1" placeholder="llave primaria"><br>
+        <input class="tbx" type="text" name="columna2" placeholder="Atributo 1"><br>
+        <input class="tbx" type="text" name="columna3" placeholder="Atributo 2"><br>
+        <input class="tbx" type="text" name="columna4" placeholder="Atributo 3"><br>
+        <br>
+        <input type="submit" class="boton"> 
+        <br>
+    </form>
+</div>
+
+    <form action="creartabla.php" method="post">
+        <h1>creacion de restricciones y llaves</h1>
+        <h3 class="etiqueta"><a href="aqui creamos las llaves"></a>:</h3>         
+        <input class="tbx" type="text" name="llaves" placeholder=""> <br>
+            <br>
+            <input type="submit" class="boton">  
+    </form>
+    <form action="creartabla.php" method="post">
+        <h1>registros de datos </h1>
+        <h3 class="etiqueta"><a href="aqui realizamos el tipo de datos"></a>:</h3>         
+        <input class="tbx" type="text" name="tipo_de_dato" placeholder=""> <br>
+            <br>
+            <input type="submit" class="boton">  
+    </form>
+</body>
+</html>
